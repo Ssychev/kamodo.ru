@@ -1,0 +1,755 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #fff
+	transition: all .3s
+
+::selection
+	background-color: $accent
+	color: #fff
+.mfp-bg 
+	position: absolute !important
+html, body
+	height: 100%
+a 
+	color: #ffffff
+	outline: none !important
+	transition: all .4s
+	&:hover
+		color: $dark
+		text-decoration: none
+button
+	outline: none !important
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1
+	font-family: $default-font
+	overflow-x: hidden
+	input, textarea
+			transition: all .3s
+			color: #fff
+			outline: none
+			&:focus::placeholder				
+				opacity: 0
+			&:focus:required:invalid
+				border-color: red
+			&:required:valid
+				border-color: green
+.clear
+	clear: both
+
+p 
+	color: $dark
+	font-size: 25px
+	font-weight: 300
+	line-height: 34px
+	letter-spacing: 1.25px
+.img-responsive
+	display: block
+	width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.logo
+	width: 150px
+	margin-bottom: 25px
+.parallax
+	width: 100%
+	height: 100%
+	position: absolute
+	background-size: cover
+	background-position: center center
+
+.yellow
+	background-color: $yellow
+.violet
+	background-color: $violet
+.blue
+	background-color: $accent
+.pink
+	background-color: $pink
+.dark
+	background-color: $dark
+	color: #fff
+
+header
+	.top_line
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		justify-content: space-between
+		position: fixed
+		width: 100%
+		background-color: #FFF
+		z-index: 15
+		top: 0
+		padding: 0 15px
+		box-shadow: 0px 0px 4px #d4d4d4
+		.logo_wrap
+			padding: 10px 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: space-around
+			.logo
+				margin-bottom: 0
+				margin-right: 10px
+				width: 100px
+			p
+				font-size: 14px
+				margin-bottom: 0
+				line-height: 1.2
+				font-weight: bold
+				b 
+					font-weight: bold
+					font-size: 25px
+					color: #000
+		b 
+			font-size: 17px
+		a 
+			color: #000
+		i 
+			display: inline-block;
+			margin-right: 10px;
+			color: #6c757d;
+			font-size: 1.4em;
+			position: absolute
+			left: 0
+			top: 18px
+		.vk
+			i 
+				font-size: 29px
+				left: 87%
+				top: 15px
+				color: #4a76a8
+		ul
+			line-height: 1.2
+			margin-bottom: 0
+			padding-left: 33px
+			padding-right: 33px
+			position: relative
+			li 
+				list-style-type: none
+				font-size: 15px
+				color: #000
+				&.soc
+					text-align: center
+					img
+						display: inline-block
+						width: 20px
+						height: 20px
+						margin: 5px 5px 5px 0
+		.navigate
+			display: block
+			color: #FFF
+			padding: 15px 30px
+			&:hover
+				color: #000
+	.firstsec
+		min-height: 100vh
+		padding: 17px 17px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		p
+			font-size: 20px
+			line-height: 29px
+			margin: 35px 0
+	.contact
+		background-color: $violet
+		padding: 17px 17px 2px
+		p
+			color: #ffffff
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 700
+			line-height: 29px
+			letter-spacing: 2px
+			margin-bottom: 15px
+			margin-top: 0
+		a 
+			display: block
+			font-family: $default-font
+			font-size: 24px
+			height: 38px
+			margin-bottom: 15px
+		i, span 
+			display: block
+			float: left
+		i 
+			margin-right: 25px
+			svg
+				stroke: #fff
+				fill: #fff
+	.middle
+		overflow: hidden
+		position: relative
+		min-height: 100vh
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: column
+		justify-content: center
+		padding: 105px 15% 35px
+		.parallax
+			background-image: url(../img/bg_top.jpg)
+			top: 0
+			left: 0
+		.banner
+			width: 100%
+			margin: 25px auto
+			padding: 25px 0
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-direction: column
+			position: relative
+			z-index: 2
+			text-align: center
+			h1
+				color: #ffffff
+				font-family: $default-bold
+				font-size: 35px
+				font-weight: 700
+				line-height: 1.3
+				text-transform: uppercase
+				font-weight: 400
+				letter-spacing: 1px
+
+			p 
+				font-size: 23px
+				line-height: 1.1
+				font-weight: 200
+				letter-spacing: 3px
+				color: #fff
+				border-top: 1.5px solid
+				padding-top: 15px
+	.banners
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		padding: 0
+		.banner
+			margin: 0
+			width: 25%
+			padding: 35px 8px
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			span 
+				display: block
+				font-size: 20px
+				font-weight: 700
+				text-transform: lowercase
+				.fas
+					position: relative
+					top: 1px
+					left: 9px
+			.img_wrap
+				text-transform: uppercase
+				border: 2px solid #fff
+				padding: 20px 35px
+			h3
+				font-size: 20px
+				text-transform: uppercase
+				letter-spacing: 2px
+				margin-bottom: 35px
+			&:hover
+				.img_wrap
+					background-color: #fff
+					color: #000
+.navigation
+	ul
+		padding: 54px 17px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		li 
+			list-style-type: none
+		a 
+			color: #ffffff
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 400
+			line-height: 29px
+			text-transform: uppercase
+			letter-spacing: 2px
+			&:hover
+				color: $dark
+				text-decoration: underline
+
+.navigation
+	.toggle
+		border: none
+		color: #fff
+		width: 100%
+		text-align: center
+		font-size: 20px
+		font-weight: bold
+		padding: 15px 0
+		i 
+			margin-right: 5px
+			transition: all .4s
+
+section
+	h2
+		color: $dark
+		font-family: $default-bold
+		font-size: 30px
+		font-weight: 400
+		line-height: 39px
+		letter-spacing: 1.5px
+		margin: 68px 53px
+		text-align: center
+#free
+	.item
+		.img_wrap
+			width: 160px
+			overflow: hidden
+			border-radius: 50%
+			margin: 0 auto
+		p
+			font-size: 18px
+			line-height: 28px
+			text-transform: uppercase
+			letter-spacing: 2px
+			color: $dark
+			text-align: center
+			margin-top: 24px
+	.owl-dot
+		&.active
+			span
+				background-color: $accent
+
+#portfolio
+	h3
+		text-align: center
+		font-size: 30px
+		margin-top: 40px
+		margin-bottom: 40px
+	.gallery
+		padding-bottom: 40px
+		margin: 0 auto
+		text-align: center
+		.item
+			display: block
+			width: 100%
+			margin: 15px	
+		img
+			width: 100%
+			height: auto
+		.hidden
+			display: none
+		.btn_more
+			display: inline-block
+			padding: 25px 40px
+			color: #fff
+			text-transform: uppercase
+			border: none
+			margin: 35px 0
+			font-weight: bold
+
+	.text
+		color: #fff
+		padding: 58px 0 58px 78px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		flex-direction: column
+		h3
+			font-family: $default-bold
+			font-size: 30px
+			font-weight: 400
+			line-height: 39px
+			margin-bottom: 20px
+		p 
+			max-width: 403px
+			color: #fff
+			font-size: 25px
+			line-height: 35px
+		b 
+			font-size: 30px
+			display: block
+			margin-bottom: 5px
+	.port_item
+		overflow: hidden
+		&.active
+			display: block
+		&.hidden
+			display: none
+		.img-wrap
+			height: 100%
+			background-size: cover
+			background-position: center center
+	.port_wrap
+		overflow: hidden
+	.port_butns
+		margin-top: 43px
+		z-index: 5
+		.item
+			width: 170px
+			margin: 0 auto
+			div
+				margin: 0 auto
+				cursor: pointer
+	.owl-stage-outer
+		margin-bottom: 69px
+	.owl-nav
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 0px
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		align-items: center
+		z-index: 1
+		margin: 0
+		.owl-prev, .owl-next
+			background-color: inherit
+			color: $violet
+			font-size: 50px
+			margin: 0
+			line-height: 170px
+		.owl-prev
+			position: absolute
+			top: 0
+			height: 170px
+			left: -10px
+		.owl-next
+			position: absolute
+			top: 0
+			height: 170px
+			right: -10px
+	.owl-dot
+		span
+			border: 1px solid $violet
+			background-color: #fff
+		&.active
+			span
+				background-color: $violet
+.arrow
+	font-size: 25px
+	font-weight: bold
+	i 
+		position: relative
+		left: 5px
+		top: 1px
+
+#request
+	.image
+		background-image: url(../img/req_form.png)
+
+.forma
+	.container-fluid
+		padding: 0
+	.col-lg-6
+		position: relative
+		padding-top: 95px
+	.content
+		position: relative
+		width: 100%
+		height: 100%
+	.image
+		background-repeat: no-repeat
+		position: absolute
+		background-size: contain
+		bottom: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-position: 50% 0
+		z-index: 2
+	form
+		padding-left: 78px
+		padding: 32px
+		padding-bottom: 40px
+		text-align: left
+		color: #ffffff
+		h2
+			color: #ffffff
+			text-align: left
+			margin: 0
+			margin-bottom: 28px
+			font-family: $default-bold
+			font-size: 30px
+			font-weight: 400
+			line-height: 39px
+			letter-spacing: 1.5px
+		input, button
+			display: block
+			background-color: inherit
+			border: none
+			outline: none !important
+			color: #fff
+			padding: 0
+		input
+			padding: 12px 0
+			margin-bottom: 29px
+			border-bottom: 1px solid #fff
+			width: 292px
+			font-family: $default-font
+			font-size: 20px
+			font-weight: 300
+		button
+			transition: all .3s
+			&:hover
+				text-decoration: underline
+
+#advatages
+	.row
+		.row
+			height: 100%
+	.item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-between
+		flex-direction: column
+		border: 15px solid #fff;
+		height: 100%
+		h3
+			font-size: 20px
+			font-weight: 700
+			line-height: 29px
+			text-transform: uppercase
+			letter-spacing: 2px
+			margin: 33px 28px 0
+		img
+			align-self: flex-end
+			max-width: 100%
+#consultation
+	margin-top: 102px
+	.image
+		background-image: url(../img/req_form.png)
+#about
+	.col-lg-6
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		padding: 51px 50px 
+	.left 
+		justify-content: flex-end
+	.right
+		justify-content: left
+	.text, h2 
+		text-align: left
+		h2
+			margin: 0
+			margin-bottom: 19px
+			text-transform: none
+			font-family: $default-bold
+			font-size: 30px
+		p
+			font-size: 25px
+			font-weight: 300
+			line-height: 34px
+			letter-spacing: 1.25px
+	img
+		max-width: 100%
+		height: auto
+	.messangers
+		padding: 30px 15px
+		p
+			font-weight: bold
+			text-align: center
+			color: #fff
+		b
+			font-size: 35px
+		.icons
+			display: -webkit-flex
+			display: -moz-flex
+			display: -ms-flex
+			display: -o-flex
+			display: flex
+			justify-content: center
+			height: 50px
+		.icon
+			color: #000
+			display: inline-block
+			width: 50px
+			height: auto
+			margin: 0 15px
+#partners
+	background-color: $accent
+	padding: 47px 0
+	h2
+		text-align: center
+		margin-top: 0
+		color: #fff
+		margin-bottom: 30px
+	.part_items
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: space-around
+		flex-wrap: wrap
+	.item
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: flex-end
+		justify-content: center
+		height: 55px
+		img
+			width: 70%
+#contacts
+	margin: 100px 15px
+	.text
+		padding-top: 40px
+		padding-bottom: 40px
+	a 
+		color: #000
+	h3
+		font-size: 25px
+		text-transform: uppercase
+		margin-bottom: 15px
+	ul
+		padding-left: 0px
+	li
+		list-style-type: none
+		margin: 10px 0
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		align-items: center
+		.fab, .fas
+			display: inline-block
+			margin-right: 10px
+			color: #6c757d
+			font-size: 1.4em
+	#form_footer
+		margin: 30px 0
+		p
+			color: #000
+			font-size: 25px
+			font-weight: bold
+			letter-spacing: auto
+			line-height: 1
+			text-transform: uppercase
+		input
+			width: 160px
+			background-color: inherit
+			border: none
+			border-bottom: 2px solid
+			color: #000
+			padding: 8px 0
+			margin-bottom: 20px
+			&::placeholder
+				color: #000
+		input, button
+			float: left
+		button
+			background-color: inherit
+			border: none 
+			color: #000
+			i 
+				margin-left: 0
+				font-size: 45px
+				top: -6px
+	.map
+		min-height: 400px
+footer
+	padding: 48px 0 30px
+	color: #dedede
+	text-align: center
+	p
+		color: #dedede
+		font-family: $default-bold
+		font-size: 20px
+		font-weight: 400
+		line-height: 1.2
+	a 
+		color: #dedede
+		&:hover
+			color: #fff
+	ul
+		display: inline-block
+		padding-left: 0
+		text-align: center
+		li
+			text-decoration: underline
+			list-style-type: none
+			padding-bottom: 24px
+			font-family: "Helvetica"
+			font-size: 15px
+			font-weight: 400
+			color: #dedede
+	.footer
+		p
+			span
+				font-weight: 300
+				font-family: $default-font
+	.item 
+		padding: 0 15px
+.copyrights
+	display: inline-block
+	text-align: center
+	li 
+		width: 100%
+		text-align: center
+		display: inline-block
+	.logo
+		float: right
+		margin: 20px 10% 20px
+.copy
+	display: inline-block
+	a
+		font-size: 12px
+.clear
+	clear: both
+	width: 0px
+@import "media" // Always at the end

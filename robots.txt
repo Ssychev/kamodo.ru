@@ -1,0 +1,7 @@
+User-Agent: *
+Allow: /
+Disallow: /cgi-bin
+Host:  https://kom62.ru/
+
+User-Agent: Yandex
+Sitemap:  https://kom62.ru/sitemap.xml
